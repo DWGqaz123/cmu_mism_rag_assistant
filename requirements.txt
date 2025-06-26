@@ -1,0 +1,26 @@
+# Core AI/ML Libraries
+torch==2.7.1
+transformers
+
+# NLP Specific Libraries
+langchain==0.2.5
+chromadb==0.5.3
+sentence-transformers==2.7.0
+openai==1.35.1  # 如果使用OpenAI API
+google-generativeai==0.6.0 # 如果使用Google Gemini API
+
+# Document Processing Libraries (for RAG)
+unstructured==0.14.4
+pypdf==4.2.0    # unstructured 的一个依赖，用于PDF解析
+
+# General Python Data & ML Tools
+scikit-learn==1.5.0
+matplotlib==3.9.0
+numpy==1.26.4
+pandas==2.2.2
+seaborn==0.13.2
+tiktoken==0.7.0 # OpenAI token计算工具
+
+# Transformers Acceleration/Optimization
+accelerate==0.30.1
+# bitsandbytes==0.43.2 
