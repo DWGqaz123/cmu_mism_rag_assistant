@@ -4,10 +4,10 @@ __pycache__/
 .env
 .DS_Store
 .ipynb_checkpoints/
-data/
 outputs/
 logs/
 model_checkpoints/
 *.safetensors
 *.bin
 *.pt
+notebooks/keys.json
