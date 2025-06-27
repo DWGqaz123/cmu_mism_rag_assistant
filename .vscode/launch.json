@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/dwg/CODE/PyTorch Projects/cmu_mism_rag_assistant/models",
+      "program": "/Users/dwg/CODE/PyTorch Projects/cmu_mism_rag_assistant/models/build/Debug/outDebug"
+    }
+  ]
+}
