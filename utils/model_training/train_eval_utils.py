@@ -1,4 +1,4 @@
-# utils/model_training/train_eval_utils.py
+# 通用训练和评估工具函数
 
 import torch
 import numpy as np
@@ -9,15 +9,12 @@ import torch.optim as optim
 from torch.optim.lr_scheduler import _LRScheduler
 from torch.utils.data import DataLoader
 
-import re 
-
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
-# 新增导入：BertForSequenceClassification
-from transformers import BertForSequenceClassification, BertTokenizer # 假设也会用到tokenizer
+from transformers import BertForSequenceClassification, BertTokenizer
 
 def set_seed(seed_value: int):
     """
