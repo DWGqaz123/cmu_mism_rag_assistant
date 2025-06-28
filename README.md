@@ -6,13 +6,14 @@
 
 ## ✨ 功能亮点
 
-  * **多文档格式支持**：能够处理包括 PDF、HTML 和 TXT 在内的多种格式文档，构建全面的知识库。
-  * **语义分块**：采用先进的 `SemanticChunker` 策略，确保每个文本块包含完整的语义单元，提高上下文质量。
-  * **智能查询分类**：利用 LLM 对用户查询进行动态分类（例如“申请要求”、“职业路径”），实现精准的预检索过滤。
-  * **混合检索 (Hybrid Search)**：结合了**向量相似度检索**（捕捉语义相关性）和 **BM25 关键词检索**（确保精确匹配），显著提升了信息召回率和准确性。
-  * **上下文重排序 (Contextual Re-ranking)**：对初步检索到的文档进行二次排序，确保最相关和最关键的信息优先传递给 LLM。
-  * **Streamlit 交互式 UI**：提供一个直观、美观的 Web 界面，方便用户进行实时问答，并查看答案来源及处理详情。
-  * **知识边界控制**：LLM 能够识别并拒绝回答知识库范围之外的问题，避免“幻觉”现象，保持回答的专业性。
+  * **多文档格式支持**：能够处理包括 PDF、HTML 和 TXT 在内的多种格式文档，构建全面的知识库.
+  * **语义分块**：采用 `SemanticChunker` 策略，确保每个文本块包含完整的语义单元，提高上下文质量.
+  * **智能查询分类**：利用 LLM 对用户查询进行动态分类（例如“申请要求”、“职业路径”），实现精准的预检索过滤.
+  * **混合检索 (Hybrid Search)**：结合了**向量相似度检索**（捕捉语义相关性）和 **BM25 关键词检索**（确保精确匹配），显著提升了信息召回率和准确性.
+  * **上下文重排序 (Contextual Re-ranking)**：对初步检索到的文档进行二次排序，确保最相关和最关键的信息优先传递给 LLM.
+  * **多运行模式**：提供**命令行界面 (CLI)** 和 **Streamlit 交互式 Web UI** 两种使用模式.
+  * **知识边界控制**：LLM 能够识别并拒绝回答知识库范围之外的问题，避免“幻觉”现象，保持回答的专业性.
+  * **模块化代码结构**：核心 RAG 逻辑已抽离为独立模块，提高了代码复用性和可维护性.
 
 ## ⚙️ 安装指南
 
@@ -49,42 +50,23 @@ source rag_env/bin/activate
 pip install -r requirements.txt
 ```
 
-**`requirements.txt` 内容示例 (请确保您的实际文件是最新的)**：
-
-```
-langchain-community
-langchain-openai
-langchain-core
-langchain-experimental
-torch
-sentence-transformers
-rank_bm25
-chromadb
-unstructured
-pypdf
-streamlit
-tiktoken
-```
-
 ### 🔑 API Key 配置
 
-本项目需要一个 OpenAI API 密钥 (`OPENAI_API_KEY`) 来运行大型语言模型。**出于安全原因，您的 API 密钥绝不应直接提交到 Git 仓库！** 请通过以下任一方式提供您的密钥：
+本项目需要 OpenAI API 密钥 (`OPENAI_API_KEY`) 来运行大型语言模型(也可使用Gemini API 和本地Ollama模型)。请通过以下任一方式提供您的密钥：
 
-#### 3.1 推荐方式：通过环境变量设置 (本地开发与大多数服务器部署)
-
-这是在本地开发环境中最推荐的方式。Streamlit 应用会首先检查环境变量。
+#### 3.1 推荐方式：通过环境变量设置
 
   * **临时设置 (当前会话有效)**：
-    在您的终端中，运行 Streamlit 应用之前，执行以下命令：
+    在您的终端中，运行 Streamlit 应用或 `main.py` 之前，执行以下命令：
     ```bash
-    export OPENAI_API_KEY="sk-您的OpenAI_API_密钥" # 请务必替换为您的实际密钥
+    export OPENAI_API_KEY="sk-您的OpenAI_API_密钥" 
     ```
   * **永久设置 (每次启动终端都有效)**：
     将上述 `export` 语句添加到您的 Shell 配置文件中（如 `~/.bashrc`、`~/.zshrc` 或 `~/.bash_profile`），然后运行 `source ~/.bashrc` (或相应文件) 使其生效。
 
 #### 3.2 Streamlit Cloud 部署方式：使用 Streamlit Secrets
 
-如果您计划将本项目部署到 Streamlit Community Cloud (一个免费的 Streamlit 应用托管平台)，您可以在其仪表板中以安全的方式设置您的密钥。
+如果您计划将本项目部署到 Streamlit Community Cloud，您可以在其仪表板中以安全的方式设置您的密钥。
 
   * **操作步骤**：
     1.  登录 Streamlit Cloud 并部署您的应用。
@@ -92,9 +74,9 @@ tiktoken
     3.  添加一个新密钥，键为 `OPENAI_API_KEY`，值为您的实际 OpenAI API 密钥。
   * **参考文档**：请参考 [Streamlit Secrets 官方文档](https://www.google.com/search?q=https://docs.streamlit.io/deploy/streamlit-community-cloud/get-started/set-up-a-streamlit-app%23set-up-secrets) 获取详细步骤。
 
-#### 3.3 备选方式：通过 `keys.json` 文件 (本地开发，不推荐提交)
+#### 3.3 备选方式：通过 `keys.json` 文件 
 
-作为本地开发的备选方案，您可以在项目根目录（与 `streamlit_app.py` 同级）创建一个名为 `keys.json` 的文件，并按以下格式添加您的 API 密钥：
+作为本地开发的备选方案，助手运行时会调用load_key.py提示您可以在项目根目录创建一个名为 `keys.json` 的文件，并提示输入您的 API 密钥：
 
   * **`keys.json` 文件内容示例**：
     ```json
@@ -102,34 +84,35 @@ tiktoken
         "OPENAI_API_KEY": "sk-您的OpenAI_API_密钥" # 请务必替换为您的实际密钥
     }
     ```
-  * **重要提示**：此文件包含敏感信息，应被 Git 忽略。请**务必不要将 `keys.json` 提交到您的 Git 仓库**。您的 `.gitignore` 文件中应该已经包含 `keys.json` 的规则。
 
 ## 📚 知识库构建
+项目data目录下已包含基本的知识信息，包括student handbooks, website pages, forums_info等。（定期补充）
 
-在首次运行 Streamlit 应用之前，您需要先构建项目的知识库（向量数据库和 BM25 索引）。
+## ▶️ 使用说明
 
-1.  **准备数据**：确保 `data/cmu_mism_docs/` 目录中包含了所有 CMU MISM 项目相关的文档（PDF、HTML、TXT 文件）。
-2.  **运行 Jupyter Notebook**：打开 `notebooks/cmu_mism_rag_build_and_test.ipynb` 文件。
-3.  **执行所有 Cell**：按照顺序运行 Notebook 中的所有 Cell。这会完成以下操作：
-      * 加载、清洗并分块所有文档。
-      * 构建 `rank_bm25` 索引。
-      * 创建并持久化 `ChromaDB` 向量数据库到 `vectorstore/cmu_mism_chroma/` 目录。
-4.  **重要提示**：每次您添加、修改或删除 `data/cmu_mism_docs/` 中的文档，或者更改了分块策略 (`streamlit_app.py` 中 `load_rag_components` 内的逻辑) 时，您都需要重新运行此 Notebook 的知识库构建部分，以确保知识库是最新的。
+您的 RAG 助手现在有两种运行模式。请确保在运行前已完成**API Key 配置**。
 
-## ▶️ 使用说明 (运行 Streamlit UI)
+### 1\. 运行 Streamlit Web UI (推荐)
 
-知识库构建完成后，您可以通过以下命令启动 Streamlit 应用：
+提供一个交互式图形界面，方便用户提问并查看答案和来源。
 
 1.  在终端中，导航到项目根目录（与 `streamlit_app.py` 文件同级）。
 2.  运行：
     ```bash
     streamlit run streamlit_app.py
     ```
-3.  应用程序将在您的默认浏览器中打开。您现在可以开始向助手提问，例如：
-      * `CMU MISM 项目的申请要求是什么？`
-      * `MISM 毕业生的职业路径有哪些？`
-      * `这个项目的学费和生活费大概需要多少？`
-      * `MISM 的课程设置怎么样？`
+3.  应用程序将在您的默认浏览器中打开。
+
+### 2\. 运行命令行界面 (CLI)
+
+提供一个简洁的终端问答体验。
+
+1.  在终端中，导航到项目根目录（与 `main.py` 文件同级）。
+2.  运行：
+    ```bash
+    python main.py
+    ```
+3.  系统初始化完成后，您可以在终端中输入问题。输入 `exit` 或 `quit` 结束会话。
 
 ## 📂 项目结构
 
@@ -137,29 +120,33 @@ tiktoken
 .
 ├── .git/                      # Git 版本控制
 ├── .gitignore                 # Git 忽略文件配置
+├── .streamlit/                # Streamlit 应用配置，包含 secrets.toml
 ├── .vscode/                   # VS Code 编辑器配置
 ├── data/                      # 原始知识库文档
 │   └── cmu_mism_docs/         # CMU MISM 相关文档 (PDF, HTML, TXT)
-├── keys.json                  # API 密钥文件 (不应提交 Git)
-├── main.py                    # 可能的项目主入口 (当前可能未充分利用)
-├── models/                    # 可能用于存放本地模型文件 (当前可能为空)
+├── keys.json                  # API 密钥文件 
+├── main.py                    # 命令行界面 (CLI) 入口
+├── models/                    # 可能用于存放本地模型文件 
 ├── notebooks/                 # Jupyter Notebooks，用于开发、实验和知识库构建
 │   └── cmu_mism_rag_build_and_test.ipynb
 ├── requirements.txt           # 项目依赖列表
 ├── streamlit_app.py           # Streamlit UI 应用主文件
 ├── test_output/               # 测试输出结果
 ├── utils/                     # 辅助工具函数和模块
-│   ├── load_key.py
+│   ├── load_key.py            # API 密钥加载工具
 │   ├── model_training/
+│   │   └── train_eval_utils.py # 训练/评估工具 (如设置随机种子)
+│   ├── rag_core_setup.py      # RAG 核心组件初始化逻辑 (供 main.py 和 streamlit_app.py 调用)
+│   └── rag_pipeline_logic.py  # RAG 核心问答逻辑 (供 main.py 和 streamlit_app.py 调用)
 │   └── text_processing/
-│       ├── category_map.py
-│       ├── mism_doc_loader.py
-│       └── query_classifier.py
+│       ├── category_map.py    # 文档类别映射
+│       ├── mism_doc_loader.py # 文档加载器与清洗
+│       └── query_classifier.py# 查询分类器
 └── vectorstore/               # 持久化存储的向量数据库 (ChromaDB) 和相关索引
     └── cmu_mism_chroma/
 ```
 
-## 📈 未来优化方向 (可选)
+## 📈 未来优化方向
 
   * **性能优化**：
       * 研究更高效的文档加载和预处理，尤其是针对大规模数据集。
@@ -181,5 +168,3 @@ tiktoken
 
   * **Email**: `dwgqaz123@outlook.com`
   * **GitHub**: [DWGqaz123/cmu\_mism\_rag\_assistant](https://github.com/DWGqaz123/cmu_mism_rag_assistant)
-
------

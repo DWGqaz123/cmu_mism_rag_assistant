@@ -6,7 +6,7 @@ __pycache__/
 # Environment variables
 .env
 # Project specific keys file
-keys.json # <--- 新增：忽略根目录下的 keys.json
+keys.json 
 # Jupyter specific files
 .ipynb_checkpoints/
 
@@ -28,4 +28,4 @@ model_checkpoints/
 .streamlit/secrets.toml
 
 # Generated vector store data
-vectorstore/ # <--- 新增：忽略整个向量数据库目录keys.json
+vectorstore/
