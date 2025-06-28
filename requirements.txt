@@ -1,32 +1,34 @@
-# Core AI/ML Libraries
-torch==2.7.1
-transformers
+# Project Dependencies for CMU MISM RAG Assistant
 
-# NLP Specific Libraries
-langchain==0.2.5
-chromadb==0.5.3
-sentence-transformers==2.7.0
-openai==1.35.1  # 如果使用OpenAI API
-google-generativeai==0.6.0 # 如果使用Google Gemini API
+# LangChain Core Libraries
+langchain-community>=0.0.35 # For document loaders, vectorstores like Chroma
+langchain-openai>=0.1.8     # For ChatOpenAI LLM integration
+langchain-core>=0.1.48      # Core LangChain functionalities
 
-# Document Processing Libraries (for RAG)
-unstructured==0.14.4
-pypdf==4.2.0    # unstructured 的一个依赖，用于PDF解析
+# Specialized LangChain modules
+langchain-experimental>=0.0.57 # For SemanticChunker
 
-# General Python Data & ML Tools
-scikit-learn==1.5.0
-matplotlib==3.9.0
-numpy==1.26.4
-pandas==2.2.2
-seaborn==0.13.2
-tiktoken==0.7.0 # OpenAI token计算工具
+# Deep Learning Framework (for embeddings and device management)
+torch>=2.0.0 # Use a version compatible with your system (e.g., MPS for Apple Silicon)
 
-# Transformers Acceleration/Optimization
-accelerate==0.30.1
-# bitsandbytes==0.43.2 
+# Embedding and Re-ranking Models
+sentence-transformers>=2.2.2 # For HuggingFaceEmbeddings and CrossEncoder
 
-# Optional: For using Sentence Transformers with LangChain
-langchain-experimental sentence-transformers
+# Sparse Retrieval (BM25)
+rank_bm25>=0.0.2
 
-# Optional: For using ChromaDB with LangChain
-rank_bm25
+# Vector Database
+chromadb>=0.4.22 # Dependency for ChromaDB vectorstore
+
+# Document Loaders (for parsing various file formats)
+unstructured>=0.12.6 # Required by UnstructuredHTMLLoader for HTML parsing
+pypdf>=4.0.0         # Required by PyPDFLoader for PDF parsing
+
+# Web UI Framework
+streamlit>=1.33.0
+
+# LLM Tokenizer (often a dependency, but good to include explicitly)
+tiktoken>=0.6.0
+
+# Optional: For managing environment variables, if not handled directly by OS/Streamlit secrets
+# python-dotenv>=1.0.0

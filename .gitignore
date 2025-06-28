@@ -1,15 +1,31 @@
+# Python artifacts
 __pycache__/
 *.pyc
 *.pyo
+
+# Environment variables
 .env
-.DS_Store
+# Project specific keys file
+keys.json # <--- 新增：忽略根目录下的 keys.json
+# Jupyter specific files
 .ipynb_checkpoints/
+
+# Operating system generated files
+.DS_Store
+
+# Output and log directories
 outputs/
 logs/
-model_checkpoints/
-*.safetensors
-*.bin
-*.pt
-notebooks/keys.json
 test_output/
 
+# Machine Learning related files/directories
+model_checkpoints/
+*.safetensors
+*.bin # This will ignore all .bin files, which includes some model weights and ChromaDB data
+*.pt
+
+# Streamlit secrets (important for deployment, should not be committed)
+.streamlit/secrets.toml
+
+# Generated vector store data
+vectorstore/ # <--- 新增：忽略整个向量数据库目录keys.json
