@@ -8,6 +8,7 @@ category_map = {
     # text_info
     "text_info/admission.txt": "admission",
     "text_info/mism-16.txt": "program_intro",
+    "text_info/cost.txt": "cost",
 
     # websites_pages
     "websites_pages/16m_pathway.html": "program_pathway",
@@ -20,5 +21,6 @@ category_map = {
     "websites_pages/ranking_reputationhtml.html": "program_intro",
 
     # forums（暂时默认）
-    "forums": "forum"
-}
+    "forums": "forum",
+    "forums/MISM-12.txt": "program_intro"
+    }

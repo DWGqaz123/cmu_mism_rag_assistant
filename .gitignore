@@ -10,4 +10,6 @@ model_checkpoints/
 *.safetensors
 *.bin
 *.pt
-notebooks/keys.jsonnotebooks/keys.json
+notebooks/keys.json
+test_output/
+

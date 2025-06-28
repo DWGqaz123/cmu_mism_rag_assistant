@@ -1,0 +1,79 @@
+As I have already graduated, I feel it is my duty to post this :p to alleviate everyone’s apprehensions about doing a Master’s in US, coming to CMU and the MISM programme in particular.
+
+Before beginning, let me give you a precautionary warning – I am no expert. All content below is purely my own experiences with a few vicarious experiences, but my sample set is limited to my batch. Let me segregate this article into two parts – doing a Master’s in US, and particularly this programme at CMU. Feel free to speak any section that is not relevant for you. 
+
+Also, I am a software engineer by profession; after studying Bachelor’s in Computer Engineering from VJTI, Mumbai and working for 4+ years at Samsung and Goldman Sachs; aspiring to be a Product Manager after coming here, but currently looking for Software Engineering roles only. Therefore, my views are from this point of view.
+
+Please do not feel that this article is trying to force my views upon you – it is purely my experience and I’m no guru. I’m not an educational counsellor who knows the ins and outs; so feel free to counter me. I have answered some of the most frequently asked questions to me. Some of the things mentioned here are so outrageous and controversial that I might have to put this on the dark web; but the United States is a democracy and I expect people to respect my opinions too.
+
+MASTER’S DEGREE IN THE UNITED STATES
+
+· Is it essential to get one?
+
+There was an old saying that having a bachelor’s degree not enough. However, don’t go by these sayings. Enrol into a programme only if you feel it is necessary for you – and not because of a sheep mentality. Read the answers below if you are in a doubtful phase.
+
+· Why the United States?
+
+The simple answer is job opportunities. In the technology sector, United States has the most jobs followed by India – that’s what I found when I did a simple search on LinkedIn. Therefore, if you are working in India in this field and you are looking for education abroad in the same sector, and would also want to continue working there, and are not aiming for any permanent residency, United States is the only logical choice. Additionally, the US has one of the world’s best universities in this sector – Carnegie Mellon, for instance, is the world's 3rd best university for Computer Science. The kind of opportunities available here are unprecedented, in terms of exposure to the tech industry, not just quantitatively but also qualitatively.
+
+There could be several reasons apart from that. The secondary reason is monetary. These jobs are also some of the most well-paying jobs. Of course, some countries do have better paying jobs than that in the US; but we beat them by sheer quantity of such jobs.
+
+· How about the opportunities for international students with regards to H1B?
+
+That’s a great question and too early for me to give you a complete answer. H1B is a lottery-based visa on which you can work for up to 6 years in the US*. Students in the US who graduate from a STEM programme are eligible for 3 years of OPT. Basically, you get 3 years of work visa which nobody can snatch away from you. Post that, it’s a big question mark on whether you get selected in the H1B lottery or not. The success rate for H1B has indeed been decreasing; and some fraudulent employers have misused this system greatly. If you do not get an H1B in these 3 years, some employers do send you outside the US for some time, then apply for an L1B on your behalf. L1B is a visa which enables people at managerial roles and those with special skills to work in the US; but they should have been working outside the US for at least 1 year prior. Until this year, some companies had been doing this by temporarily sending people to Canada or the United Kingdom. However, with increasing failure rates for the H1B, I’m not sure how long is this sustainable.
+
+· What are the job opportunities after graduation currently?
+
+Right now, the market is horrible; and nobody can surely say when it will recover. People graduating now from my batch are facing tough times. Receiving an online assessment is a big deal and you need to get your interviews success rate close to 100%. I need not tell you about the layoffs happening. The situation was so bad that people were laid off immediately after joining and they had no other offer. You can be unemployed for a maximum of 90 days on F1 OPT. I personally know many people who were laid off, whose offers were rescinded, or were postponed to a date outside their permissible OPT (likely purposely).
+
+However, one should realise that there are two kinds of job roles posted on a company’s website – new graduate roles and professional (experienced) roles. If you came for a master’s degree directly after your bachelor’s, you can apply only to the former. If you have any experience (I would recommend a minimum of 2 years), then you can also apply to the latter roles. Also note that many job postings are fake – don’t ask me why. Many a times, when I see a job posting and approach an employee of that company, they often guide me that their company is on a hiring freeze. Therefore, I have no idea why these postings exist. Some say they are PERM postings (a fake posting which enables the company to apply for a green card for their employees); but after talking to a few people, I realised that that isn’t the case either. Very often, a company would post a job for a very limited time, then recall it; and post it again with a different job ID.
+
+· Do I need a counsellor to help me prepare my SOPs, LORs and guide me which universities to choose?
+
+No. In today’s world, use ChatGPT to write them. You don’t need to spend a single rupee on these counsellors. I had in fact, used their services but found them not worthy enough for the money they charge. At times, they did guide well; however, it was me who did most of the work anyways. There is indeed a genuine problem in choosing universities – I do not trust the rankings of the generic websites like US News either. The best way is to get in touch with current students of that programme in that university, compare their profiles, find where you would rank yourself, ask them about the opportunities you are interested in, and then apply accordingly. A programme X at a university Y could be good at rankings – but for your profile, your prior experience, and your career goals, it may not be the best one. These counsellors are not enough customized to your needs to find good universities for you.
+
+CMU AND MISM-12
+
+· Whom is this programme for?
+
+This programme is meant for many kinds of people:
+
+1.    People coming from non-CS backgrounds who have some technical experience and are looking for technical roles like a data scientist or a software engineer.
+
+2.    People from CS backgrounds who have experience but are looking to pivot elsewhere like data science or product management.
+
+3.    People who come from a completely non-technical background and are looking to get high-level technology learning experience and pivot to fields like product management.
+
+If you are somebody who does not want to pivot, and already have technical experience, I do not recommend this programme to be your first choice.
+
+·  Is it hectic?
+
+Yes, it is hectic like all programmes at CMU but manageable. It really depends on what kinds of courses do you take, and how well-versed you are with them. For example, out of the 3 semesters, only 2 were hectic for me, relative to my work and bachelor’s.
+
+·  Should I choose MISM-12 or MISM-16?
+
+When I was a student, as per CMU’s policy, anybody with more than 3 years of experience by the time they get admitted to CMU would be by default admitted to MISM-12. For example, even if you had 2 years 6 months of experience when you applied, you would be admitted to MISM-12 regardless of what you have applied for. This has a disadvantage that you do not get an internship, which is a big deal if you wish to pivot to a different kind of role, because that makes you less desirable in the job market for that role. However, if you are ok in temporarily continuing in the same field as earlier, you should face a little less difficulty in finding a job. On the flip side, if you have 3+ years of work experience, I feel that you are better off interacting with your equals and more experienced folks and learn from them, than be in a class with less experienced folks.
+
+· Is this programme good?
+
+This is a techno-management programme with a little more focus on the technical side. As per many rankings, this is the best Information Systems programme in the world. However, if they are believed to be true, I find a good product opportunity gap for a truly world-class IS programme – because there are many drawbacks in this so-called ‘best’. Harvard and Stanford directors – if you are reading this, please do the needful. The best part about this programme is that it is vanilla. You are mandated to complete 162 units in 3 semesters, i.e., 54 per semester, of which around 120 are core and the rest are for electives. You can exempt any course and take electives to replace it. If you have worked as a software engineer, certain courses like Java, Database Management and Distributed Systems are easy for you to exempt. Some of the core courses also have a lot of freedom; and thus, you can tune the programme to your needs. If you are a MISM-12 student, you won’t find too many electives to take in summer as Heinz and most of the other colleges (such as School of Computer Science, Electrical and Computer Engineering, etc.) offer very limited courses. However, if you are in MISM-16, I would strongly encourage you to make the best use of this policy. Some of these core courses are downright dumb, if not exempted. People have been telling me that Distributed Systems is an annoying course and the concepts being today taught haven’t changed in the past decade or two. It has been a waste of time, as claimed by many.
+
+The downside of this programme is that employers consider the students of this programme as second-class people, as claimed by many people. If you are applying for technical roles, your application is not given the same value as someone from MS in AI or MCDS (Master of Computational Data Science). Some say that CMU students from these programmes themselves look down upon us too; although, I am yet to verify these claims myself. On Quora too, the programme has a bad name. The other problem is being waitlisted for many desired elective courses and not getting a seat. At the end, other batches are prioritized over us. The academic advising for the programme could also be improved significantly.
+
+Having said that, if you are able to tune this programme to your needs, it is actually a great programme to be in and I can surely say that I have learnt a lot. There are many entrepreneurs who join this programme and many of our alumni have been very successful. Moreover, we do carry CMU’s brand name for life.
+
+· What are the alternatives in CMU?
+
+If your focus is specific, such as AI/ML, consider programmes like MS in AI, MS in Machine Learning, Master of Language Technologies or MCDS (Master of Computational Data Science). For data analytics, you may check out MS in Data Analytics (although you may check the credibility of this programme too). On a broader technical level, you may consider MCDS and MSE (Master of Software Engineering). For product management, there is a dedicated programme known as MS in Product Management, which is a 1-year programme with internship, i.e., only 2 semesters. Another choice is MHCI (Master of Human Computer Interaction) and a Tepper MBA. Reiterating again, these programmes may not be well-suited for your needs and are only generic alternatives.
+
+· What are the alternatives outside CMU?
+
+One of the best IS programmes in my opinion is by UC Berkeley, but no other university comes close. Search for other similar programmes in other universities.
+
+· How is the teaching?
+
+For some technical subjects, YouTubers with significantly less experience than our professors can teach the concepts well because they know how to teach. These professors know the subject matter well and can superfluously write long research papers on one concept; but I felt a disconnect in what they teach and how they teach for a lot of subjects. However, I cannot forget Terry Lee – who was by far the best professor in explaining the concepts well; despite the fact that I had not taken his course, I attended all his lectures and for the first time somebody that taught me certain crucial concepts in this way. Apart from him, I would specially commend many other professors too, for their unique methodology and deep knowledge.
+
+ 
+
+To conclude, I do believe that I got to learn a lot. Although my profession would not change soon, the way in which I would approach things now has changed a lot. Some of my favourite courses, from whom I got to learn a lot were Introduction to Machine Learning, Digital Service Innovation, Natural Language Processing and Engineering Data Intensive Scalable Systems. Core courses like Economic Analysis, Managing Disruptive Technologies and Decision Making Under Uncertainty have also taught me a lot. Yesterday, someone asked me if given a choice one year ago, would I have come to CMU? My answer was that considering the dire situation today, I wouldn’t have, had I known about it. My former employer was too dear for me to take such a risk; but nevertheless, I’ve taken it now and the future remains to be seen.
